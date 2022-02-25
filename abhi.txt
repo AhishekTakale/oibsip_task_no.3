@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temperature_converter</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        body{
+            height: 100vh;
+            background-image: url("back2.jpg");
+            align-items: center;
+            justify-content: center;
+        }
+        .all{
+            margin-top: 20px;
+            margin-left: 340px;
+            width: 800px;
+            background-color: rgb(240, 236, 236);
+            padding:70px 50px;
+            box-shadow: 0 20px 25px rgb(0, 0, 0);
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .cf{
+            width:48%;
+            text-align: center;
+            font-size: 40px;
+        }
+        input{
+            width: 100%;
+            height:70px;
+            border-radius: 5px;
+            border:2px solid #bebdbd;
+            outline:none;
+            margin-top: 8px;
+            padding: 30px;
+            font-size: 30px;
+        }
+        header{
+            margin-top: 50px;
+            text-align: center;
+            font-size: 80px;
+            color: white;
+            text-shadow: 2px 2px 2px rgb(252, 249, 249);
+        }
+        .border{
+            margin-top: 90px;
+            margin-left: 100px;
+            margin-right: 100px;
+            background-color: rgba(255, 251, 251, 0.329);
+            border: 2px solid rgb(185, 183, 183);
+            padding-bottom: 110px;
+            padding-top: 90px;
+            border-radius: 30px;
+            
+        }
+        hr{
+            width: 1200px;
+            margin-top: 15px;
+            margin-left: 250px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="body">
+    <header>
+        Temperature Converter
+        <hr>
+    </header>
+
+    <div class="border">
+        <div class="all">
+            <div class="cf">
+                <label for="celsius">Celsius</label>
+                <input type="number" id="celsius">
+            </div>
+            <div class="cf">
+                <label for="fahrenheit">Fahrenheit</label>
+                <input type="number" id="fahrenheit">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="converter.js"></script>
+</body>
+</html>
